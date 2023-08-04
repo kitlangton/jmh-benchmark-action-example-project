@@ -14,7 +14,7 @@ class MyBenchmark {
   @Benchmark
   def measure2(): Unit = {
     val x    = 1 + 2
-    val slow = List.fill(50_000)(x).reverse
+    val slow = List.fill(53_000)(x).reverse
   }
 
 }
