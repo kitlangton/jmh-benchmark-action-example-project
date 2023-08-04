@@ -35,7 +35,7 @@ lazy val benchmarks = (project in file("benchmarks"))
     resolvers ++= Resolver.sonatypeOssRepos("snapshots"),
     testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework"),
     runBenchmarks := {
-      (Jmh / run).toTask("-i 3 -f 3 -rf json -rff output.json .*").value
+      (Jmh / run).toTask(" -i 3 -wi 3 -f1 -t1 -rf json -rff output.json .*").value
     }
   )
   .dependsOn(core)
