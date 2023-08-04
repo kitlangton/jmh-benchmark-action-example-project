@@ -34,7 +34,7 @@ jobs:
           sbt clean compile 
           sbt 'benchmarks/runBenchmarks'
       - name: JMH Benchmark Action
-        uses: kitlangton/jmh-benchmark-action@v0.1.0
+        uses: kitlangton/jmh-benchmark-action@v0.1.1
         with:
           jmh-output-path: benchmarks/output.json
           github-token: ${{ secrets.GITHUB_TOKEN }}
