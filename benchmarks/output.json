@@ -1,0 +1,102 @@
+[
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "benchmarks.MyBenchmark.measure",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_Adopt_jdk/11.0.20-8/x64/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "11.0.20",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.20+8",
+        "warmupIterations" : 3,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 11800.500149423553,
+            "scoreError" : 212.238117195371,
+            "scoreConfidence" : [
+                11588.262032228182,
+                12012.738266618924
+            ],
+            "scorePercentiles" : {
+                "0.0" : 11787.147784309658,
+                "50.0" : 11805.902052669679,
+                "90.0" : 11808.450611291317,
+                "95.0" : 11808.450611291317,
+                "99.0" : 11808.450611291317,
+                "99.9" : 11808.450611291317,
+                "99.99" : 11808.450611291317,
+                "99.999" : 11808.450611291317,
+                "99.9999" : 11808.450611291317,
+                "100.0" : 11808.450611291317
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    11808.450611291317,
+                    11805.902052669679,
+                    11787.147784309658
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "benchmarks.MyBenchmark.measure2",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/opt/hostedtoolcache/Java_Adopt_jdk/11.0.20-8/x64/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "11.0.20",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.20+8",
+        "warmupIterations" : 3,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 3821.514236182884,
+            "scoreError" : 209.50068221034036,
+            "scoreConfidence" : [
+                3612.0135539725434,
+                4031.0149183932244
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3808.254559100912,
+                "50.0" : 3828.0726507415134,
+                "90.0" : 3828.2154987062268,
+                "95.0" : 3828.2154987062268,
+                "99.0" : 3828.2154987062268,
+                "99.9" : 3828.2154987062268,
+                "99.99" : 3828.2154987062268,
+                "99.999" : 3828.2154987062268,
+                "99.9999" : 3828.2154987062268,
+                "100.0" : 3828.2154987062268
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3808.254559100912,
+                    3828.2154987062268,
+                    3828.0726507415134
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
