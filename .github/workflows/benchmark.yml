@@ -22,13 +22,7 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Cache SBT dependencies
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.m2/repository
-            ~/.sbt
-            ~/.ivy2/cache
-          key: ${{ hashFiles('**/build.sbt') }}
+        uses: coursier/cache-action@v6
       - name: Build and run JMH benchmark
         run: |
           sbt clean compile 
