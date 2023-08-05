@@ -27,3 +27,4 @@ jobs:
         with:
           jmh-output-path: benchmarks/output.json
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          fail-on-regression: true
