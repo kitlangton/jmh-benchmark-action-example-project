@@ -7,10 +7,6 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,7 +21,6 @@ jobs:
         uses: coursier/cache-action@v6
       - name: Build and run JMH benchmark
         run: |
-          sbt clean compile 
           sbt 'benchmarks/jmh:run -i 3 -wi 3 -f1 -t1 -rf json -rff output.json .*'
       - name: JMH Benchmark Action
         uses: kitlangton/jmh-benchmark-action@main
