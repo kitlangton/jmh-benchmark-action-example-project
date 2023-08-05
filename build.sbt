@@ -5,7 +5,7 @@ lazy val root = project
   .in(file("."))
   .aggregate(core, benchmarks)
   .settings(
-    name           := "zio-http-open-api",
+    name           := "jmh-benchmark-action-example-project",
     publish / skip := true
   )
 
